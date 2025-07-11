@@ -176,3 +176,6 @@ cython_debug/
 
 # VS Code settings
 .vscode/
+
+# Test folder
+tests/
