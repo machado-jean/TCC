@@ -1,0 +1,143 @@
+Semana 1 (15/09–21/09):
+  Objetivo: Explorar séries e pré-processamento inicial.
+  Entrega:
+    Código:
+      - EDA (séries preço ENTSOE e demanda ONS, decomposição, ACF/PACF)
+      - Testes de estacionariedade (ADF, KPSS)
+      - Funções de normalização, padronização e tratamento de outliers
+    Bibliografia e Artigo IEEE:
+      - Resumo (1–2 páginas) sobre tendência, sazonalidade, estacionariedade e pré-processamento, com 5–7 referências
+      - Estruturação inicial do artigo IEEE no Overleaf: introdução e seção “Related Work”
+
+Semana 2 (22/09–28/09):
+  Objetivo: Definir janelas, validação temporal e comparar LSTM recursivo vs. LSTM seq2seq.
+  Entrega:
+    Código:
+      - Funções para janelamento input/output
+      - Pipeline de walk-forward validation
+      - Implementação de LSTM recursivo (iterativo) e LSTM seq2seq (encoder-decoder) em modo univariado para preço e demanda
+    Bibliografia e Artigo IEEE:
+      - Texto (1–2 páginas) sobre janelamento e comparação entre LSTM recursivo e seq2seq, com 4–6 referências
+      - No Overleaf: seção “Methodology” com descrição dos modelos
+
+Semana 3 (29/09–05/10):
+  Objetivo: Modelos clássicos (ARIMA, SARIMA, ETS) em univariado e multivariado.
+  Entrega:
+    Código:
+      - Pipelines ARIMA/SARIMA/ETS univariado e multivariado
+      - Gráficos e métricas RMSE/MAE para ambas abordagens
+    Bibliografia e Artigo IEEE:
+      - Descrição (2–3 páginas) dos modelos clássicos e univariado vs. multivariado
+      - No Overleaf: conclusão da seção “Methodology”
+
+Semana 4 (06/10–12/10):
+  Objetivo: Modelos de ML tradicionais (XGBoost, CatBoost, LightGBM) univariado e multivariado.
+  Entrega:
+    Código:
+      - Treino/predict XGBoost, CatBoost, LightGBM em ambos modos
+      - Comparação de métricas para preço e demanda
+    Bibliografia e Artigo IEEE:
+      - Texto (2 páginas) sobre fundamentos de cada algoritmo e multivariado
+      - No Overleaf: subseção “Machine Learning Models”
+
+Semana 5 (13/10–19/10):
+  Objetivo: Modelos de deep learning básicos (LSTM, GRU) univariado vs. multivariado, sem otimização.
+  Entrega:
+    Código:
+      - Notebooks Keras/TensorFlow com LSTM e GRU simples para ambas abordagens
+      - Curvas de aprendizado e métricas comparativas
+    Bibliografia e Artigo IEEE:
+      - Explicação (2 páginas) sobre RNNs univariadas e Seq2Seq multivariadas
+      - No Overleaf: subseção “Deep Learning Models”
+
+Semana 6 (20/10–26/10):
+  Objetivo: Modelos avançados (Prophet, N-BEATS, PatchTST) univariado e multivariado.
+  Entrega:
+    Código:
+      - Implementações básicas de Prophet, N-BEATS e PatchTST para ambas abordagens
+      - Gráficos comparativos de previsões
+    Bibliografia e Artigo IEEE:
+      - Texto (2–3 páginas) apresentando cada modelo e discussão univariado vs. multivariado
+      - No Overleaf: subseção “Advanced Forecasting Models”
+
+Semana 7 (27/10–02/11):
+  Objetivo: Experimentação com frameworks para séries temporais e comparação de suas capacidades.
+  Entrega:
+    Código:
+      - SKTime: modelos ARIMA e Theta em interface sklearn
+      - DARTS: implementação de N-BEATS e RNN
+      - GluonTS: uso de DeepAR para multivariado
+      - TSAI (fastai): uso de TabularTimeSeries para LSTM
+      - Matriz de resultados iniciais em univariado e multivariado
+    Bibliografia e Artigo IEEE:
+      - Sumário (2 páginas) sobre SKTime, DARTS, GluonTS e TSAI, vantagens e limitações
+      - No Overleaf: seção “Tools and Frameworks”
+
+Semana 8 (03/11–09/11):
+  Objetivo: Seleção dos 5 melhores modelos com base em performance univariada e multivariada.
+  Entrega:
+    Código:
+      - Script de ranking automático por RMSE/MAPE para ambas abordagens
+      - Listagem dos 5 finalistas em cada categoria
+    Bibliografia e Artigo IEEE:
+      - Justificativa (1 página) da escolha dos modelos, referências de benchmarks
+      - No Overleaf: seção “Model Selection”
+
+Semana 9 (10/11–16/11):
+  Objetivo: Otimização de hiperparâmetros dos top 5 em univariado e multivariado.
+  Entrega:
+    Código:
+      - Tuning com Optuna/Hyperopt para cada modelo em ambas abordagens
+      - Tabelas comparativas antes/depois da otimização
+    Bibliografia e Artigo IEEE:
+      - Descrição (2 páginas) de estratégias de otimização e impactos
+      - No Overleaf: seção “Hyperparameter Optimization”
+
+Semana 10 (17/11–23/11):
+  Objetivo: Desenvolvimento do controlador de bateria com inputs preditivos e outputs de decisão, incluindo pesquisa de estratégias de controle básico.
+  Entrega:
+    Código:
+      - Módulo que consome previsões (univariado e multivariado) para decidir compra, venda e armazenamento
+      - Definição de inputs (previsões de preço e demanda) e outputs (ações de controle)
+      - Simulação inicial (backtest)
+    Bibliografia e Artigo IEEE:
+      - Texto (2 páginas) sobre controle de BESS, inputs/outputs e estratégias básicas (rule-based, threshold)
+      - No Overleaf: seção “Battery Control System”
+
+Semana 11 (24/11–30/11):
+  Objetivo: Validação econômica e refinamento do controlador.
+  Entrega:
+    Código:
+      - Backtests financeiros, métricas de ROI, custo e lucro para decisões baseadas em cada abordagem
+      - Ajustes nas regras de decisão para maximizar retorno
+    Bibliografia e Artigo IEEE:
+      - Análise (2 páginas) de desempenho econômico, comparando univariado e multivariado
+      - No Overleaf: seção “Results – Control Performance”
+
+Semana 12 (01/12–07/12):
+  Objetivo: Redação de resultados, discussões e implicações.
+  Entrega:
+    Código:
+      - Scripts para geração de gráficos e tabelas finais, destacando comparações de abordagens e controle
+      - Notebooks organizados e documentados
+    Bibliografia e Artigo IEEE:
+      - Capítulos de resultados e discussão (4–5 páginas) com citações
+      - No Overleaf: seções “Discussion” e “Conclusion”
+
+Semana 13 (08/12–14/12):
+  Objetivo: Revisão técnica, validação do repositório e formatação final.
+  Entrega:
+    Código:
+      - Repositório final com README, instruções de reprodução e notebooks limpos
+    Bibliografia e Artigo IEEE:
+      - Documento completo formatado conforme padrão IEEE no Overleaf
+      - Seção “Acknowledgments” e inserção de referências bibliográficas
+
+Semana 14 (15/12–19/12):
+  Objetivo: Preparação e ensaio da apresentação.
+  Entrega:
+    Código:
+      - Slides no Overleaf Beamer ou PowerPoint com principais resultados e comparações
+    Bibliografia e Artigo IEEE:
+      - Script de apresentação com citações resumidas
+      - Exportação final do artigo IEEE em PDF
