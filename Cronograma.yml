@@ -7,7 +7,8 @@ Semana 1 (15/09–21/09):
       - Funções de normalização, padronização e tratamento de outliers
     Bibliografia e Artigo IEEE:
       - Resumo (1–2 páginas) sobre tendência, sazonalidade, estacionariedade e pré-processamento, com 5–7 referências
-      - Estruturação inicial do artigo IEEE no Overleaf: introdução e seção “Related Work”
+      - Normalizaçao dos dados para ficar escalável em vez de uma região de um país
+      - Estruturação inicial do artigo IEEE no Overleaf: Introdução e seção fundamentação teórica
 
 Semana 2 (22/09–28/09):
   Objetivo: Definir janelas, validação temporal e comparar LSTM recursivo vs. LSTM seq2seq.
@@ -18,7 +19,7 @@ Semana 2 (22/09–28/09):
       - Implementação de LSTM recursivo (iterativo) e LSTM seq2seq (encoder-decoder) em modo univariado para preço e demanda
     Bibliografia e Artigo IEEE:
       - Texto (1–2 páginas) sobre janelamento e comparação entre LSTM recursivo e seq2seq, com 4–6 referências
-      - No Overleaf: seção “Methodology” com descrição dos modelos
+      - No Overleaf: seção Metodologia com descrição dos modelos
 
 Semana 3 (29/09–05/10):
   Objetivo: Modelos clássicos (ARIMA, SARIMA, ETS) em univariado e multivariado.
@@ -28,7 +29,7 @@ Semana 3 (29/09–05/10):
       - Gráficos e métricas RMSE/MAE para ambas abordagens
     Bibliografia e Artigo IEEE:
       - Descrição (2–3 páginas) dos modelos clássicos e univariado vs. multivariado
-      - No Overleaf: conclusão da seção “Methodology”
+      - No Overleaf: conclusão da seção Metodologia
 
 Semana 4 (06/10–12/10):
   Objetivo: Modelos de ML tradicionais (XGBoost, CatBoost, LightGBM) univariado e multivariado.
@@ -38,7 +39,7 @@ Semana 4 (06/10–12/10):
       - Comparação de métricas para preço e demanda
     Bibliografia e Artigo IEEE:
       - Texto (2 páginas) sobre fundamentos de cada algoritmo e multivariado
-      - No Overleaf: subseção “Machine Learning Models”
+      - No Overleaf: subseção Modelos de Machine Learning e Deep Learning
 
 Semana 5 (13/10–19/10):
   Objetivo: Modelos de deep learning básicos (LSTM, GRU) univariado vs. multivariado, sem otimização.
@@ -48,7 +49,7 @@ Semana 5 (13/10–19/10):
       - Curvas de aprendizado e métricas comparativas
     Bibliografia e Artigo IEEE:
       - Explicação (2 páginas) sobre RNNs univariadas e Seq2Seq multivariadas
-      - No Overleaf: subseção “Deep Learning Models”
+      - No Overleaf: subseção Modelos de Machine Learning e Deep Learning
 
 Semana 6 (20/10–26/10):
   Objetivo: Modelos avançados (Prophet, N-BEATS, PatchTST) univariado e multivariado.
@@ -58,7 +59,7 @@ Semana 6 (20/10–26/10):
       - Gráficos comparativos de previsões
     Bibliografia e Artigo IEEE:
       - Texto (2–3 páginas) apresentando cada modelo e discussão univariado vs. multivariado
-      - No Overleaf: subseção “Advanced Forecasting Models”
+      - No Overleaf: subseção Modelos de Machine Learning e Deep Learning
 
 Semana 7 (27/10–02/11):
   Objetivo: Experimentação com frameworks para séries temporais e comparação de suas capacidades.
@@ -71,7 +72,7 @@ Semana 7 (27/10–02/11):
       - Matriz de resultados iniciais em univariado e multivariado
     Bibliografia e Artigo IEEE:
       - Sumário (2 páginas) sobre SKTime, DARTS, GluonTS e TSAI, vantagens e limitações
-      - No Overleaf: seção “Tools and Frameworks”
+      - No Overleaf: seção Frameworks
 
 Semana 8 (03/11–09/11):
   Objetivo: Seleção dos 5 melhores modelos com base em performance univariada e multivariada.
@@ -81,7 +82,7 @@ Semana 8 (03/11–09/11):
       - Listagem dos 5 finalistas em cada categoria
     Bibliografia e Artigo IEEE:
       - Justificativa (1 página) da escolha dos modelos, referências de benchmarks
-      - No Overleaf: seção “Model Selection”
+      - No Overleaf: seção Implementação dos modelos e Critérios
 
 Semana 9 (10/11–16/11):
   Objetivo: Otimização de hiperparâmetros dos top 5 em univariado e multivariado.
@@ -105,7 +106,7 @@ Semana 10 (17/11–23/11):
       - No Overleaf: seção “Battery Control System”
 
 Semana 11 (24/11–30/11):
-  Objetivo: Validação econômica e refinamento do controlador.
+  Objetivo: Validação econômica e refinamento do controlador. Algo simples e verificar
   Entrega:
     Código:
       - Backtests financeiros, métricas de ROI, custo e lucro para decisões baseadas em cada abordagem
