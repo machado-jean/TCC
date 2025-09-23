@@ -1,43 +1,56 @@
-{ 
-    "python.defaultInterpreterPath": ".\\venv\\Scripts\\python.exe", 
-    "python.terminal.activateEnvironment": false, 
-    "terminal.integrated.profiles.windows": { 
-        "PowerShell": { 
-            "source": "PowerShell", 
-            "icon": "terminal-powershell", 
-            "args": [ 
-                "-NoExit", 
-                "-Command", 
-                "& { . '.\\venv\\Scripts\\Activate.ps1' }" 
-            ] 
-        } 
-    }, 
-    "terminal.integrated.defaultProfile.windows": "PowerShell", 
-    "files.exclude": { 
-        "**/__pycache__": true 
-    }, 
-    "[python]": { 
-        "editor.defaultFormatter": "ms-python.black-formatter", 
-        "editor.formatOnSave": true, 
-        "editor.rulers": [150], 
-        "editor.formatOnType": true, 
-        "editor.codeActionsOnSave": { 
-            "source.organizeImports": "explicit" 
-        } 
-    }, 
-    "python.analysis.typeCheckingMode": "basic", 
-    "python.analysis.autoSearchPaths": true, 
-    "python.analysis.useLibraryCodeForTypes": true, 
-    "python.languageServer": "Pylance", 
-    "files.autoSave": "onFocusChange", 
-    "editor.insertSpaces": true, 
-    "editor.tabSize": 4, 
-    "editor.folding": true, 
-    "editor.foldingStrategy": "indentation", 
-    "editor.quickSuggestions": { 
-        "other": true, 
-        "comments": false, 
-        "strings": true 
-    }, 
-    "editor.suggestSelection": "first" 
-} 
+{
+    "python.terminal.activateEnvironment": true,
+    "python.defaultInterpreterPath": "",
+    // Perfis de terminal para Windows
+    "terminal.integrated.profiles.windows": {
+        "PowerShell-venv": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell",
+            "args": [
+                "-NoExit",
+                "-Command",
+                "if (Test-Path .\\venv\\Scripts\\Activate.ps1) { . .\\venv\\Scripts\\Activate.ps1 }"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell-venv",
+    // Perfis de terminal para Linux
+    "terminal.integrated.profiles.linux": {
+        "bash-venv": {
+            "path": "/bin/bash",
+            "args": [
+                "-c",
+                "if [ -f ./venv/bin/activate ]; then source ./venv/bin/activate; fi; exec bash"
+            ],
+            "icon": "terminal-bash"
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "bash-venv",
+    "files.exclude": {
+        "**/__pycache__": true
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.rulers": [150],
+        "editor.formatOnType": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.autoSearchPaths": true,
+    "python.analysis.useLibraryCodeForTypes": true,
+    "python.languageServer": "Pylance",
+    "files.autoSave": "onFocusChange",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.folding": true,
+    "editor.foldingStrategy": "indentation",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    "editor.suggestSelection": "first"
+}
