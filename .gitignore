@@ -137,3 +137,6 @@ cython_debug/
 
 # Articles used as reference
 articles/
+
+# Backup files
+backup/
