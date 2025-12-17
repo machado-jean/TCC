@@ -143,3 +143,7 @@ backup/
 
 # Notebooks superados
 notebooks/Superado/
+
+# Pastas de info de bibliotecas de notebooks
+notebooks/catboost_info/
+notebooks/lightning_logs/
